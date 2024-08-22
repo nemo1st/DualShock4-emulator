@@ -402,8 +402,8 @@ int main(int argc, char **argv)
 		report.sCurrentTouch.bIsUpTrackingNum1 = 0x80;
 		report.sCurrentTouch.bIsUpTrackingNum2 = 0x80;
 		
-		//report.bBatteryLvl = 8;
-		//report.bBatteryLvlSpecial = 32; ??? not working
+		report.bBatteryLvl = 40;
+		report.bBatteryLvlSpecial = 50; //??? not working
 
 		// Xbox mode
 		if (EmulationMode == XboxMode) {
