@@ -1,10 +1,7 @@
-[![EN](https://user-images.githubusercontent.com/9499881/33184537-7be87e86-d096-11e7-89bb-f3286f752bc6.png)](https://github.com/r57zone/DualShock4-emulator/) 
-[![RU](https://user-images.githubusercontent.com/9499881/27683795-5b0fbac6-5cd8-11e7-929c-057833e01fb1.png)](https://github.com/r57zone/DualShock4-emulator/blob/master/README.RU.md)
-[![FR](https://user-images.githubusercontent.com/9499881/147121779-f90bdadf-8009-4dc4-8682-f15f4bd2008e.png)](https://github.com/r57zone/DualShock4-emulator/blob/master/README.FR.md)
-← Choose language | Выберите язык
-
 # DualShock4 emulator
-Simple application to emulate the Sony DualShock 4 gamepad using an Xbox controller or keyboard and mouse. This method is necessary for the fully work of the service [Sony Playstation Plus](https://www.playstation.com/en-us/ps-plus/) or [Playstation Remote Play](https://www.playstation.com/remote-play/). Works based on the driver [ViGEm](https://github.com/ViGEm).
+Simple application to emulate the Sony DualShock 4 gamepad using an Xbox controller or keyboard and mouse. 
+
+This method is necessary for the fully work of the service [Sony Playstation Plus](https://www.playstation.com/en-us/ps-plus/) or [Playstation Remote Play](https://www.playstation.com/remote-play/). Works based on the driver [ViGEm](https://github.com/ViGEm).
 
 ## Setup
 1. Install [ViGEmBus](https://github.com/ViGEm/ViGEmBus/releases).
@@ -15,10 +12,17 @@ Simple application to emulate the Sony DualShock 4 gamepad using an Xbox control
 6. You can also check how the DualShock 4 controller emulation works in the [VSCView](https://github.com/Nielk1/VSCView/releases/) program. 
 7. Study the configuration `Config.ini` and the description below, perhaps something can be configured more conveniently.
 
+### Setup PSRemote
+
+1. Download PS_Remote_Play_5.5.0.08250.exe .
+
+2. Patch [xeropresence/remoteplay-version-patcher](https://github.com/xeropresence/remoteplay-version-patcher)
+
+
 ## Download
 >Version for Windows 10, 11.
 
-**[Download](https://github.com/r57zone/DualShock4-emulator/releases)**
+**[Download](https://github.com/nemo1st/DualShock4-emulator/releases)**
 
 ## FAQ
 **• The program crashes after launch**<br>
@@ -78,7 +82,7 @@ You can use swipes for the keyboard, the button codes are described below.
 ## Motion with Android phone (Gyroscope)
 1. Enable the `Activate` parameter in the `Config.ini` configuration file, changing `0` to `1`, in the `Motion` section.
 2. Check Windows Firewall to see if incoming connections are allowed on your network type (private) and allow if disabled.
-3. Install FreePieIMU on your Android phone by taking the latest version in the [OpenTrack archive](https://github.com/opentrack/opentrack) or in the [releases](https://github.com/r57zone/DualShock4-emulator/releases), enter the IP address of your computer, select "Send raw data", if not selected, select the data rate "Fastest" or "Fast".
+3. Install FreePieIMU on your Android phone by taking the latest version in the [OpenTrack archive](https://github.com/opentrack/opentrack) or in the [releases](https://github.com/nemo1st/DualShock4-emulator/releases), enter the IP address of your computer, select "Send raw data", if not selected, select the data rate "Fastest" or "Fast".
 4. Reduce the general sensitivity if necessary (the `Sens` parameter, in the `Motion` section, where `100` is 100% sensitivity) in configuration file.
 5. Reduce individual sensor sensitivity if necessary (the `AccelSens` and `GyroSense`, in the `Motion` section,  where `100` is 100% sensitivity) in configuration file.
 6. Invert the axes if necessary (the parameters `InverseX`, `InverseY` and `InverseZ`, in the `Motion` section, where `1` is turning on the inversion, and `0` is turning off).
@@ -120,7 +124,7 @@ Shake the gamepad | T
 Rotate gamepad forward, backward, right, left (gyroscope) | Numpad 8, 2, 4, 6
 PS | F2
 
-In the profile configuration file, in the "Profiles" folder, you can change the button bindings or create a new one based on `Default.ini`. Button names can be found [here](https://github.com/r57zone/DualShock4-emulator/blob/master/BINDINGS.md). You can choose from standard profiles. Send more convenient bindings for a variety of games.
+In the profile configuration file, in the "Profiles" folder, you can change the button bindings or create a new one based on `Default.ini`. Button names can be found [here](https://github.com/nemo1st/DualShock4-emulator/blob/master/BINDINGS.md). You can choose from standard profiles. Send more convenient bindings for a variety of games.
 
 
 
